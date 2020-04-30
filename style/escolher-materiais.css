@@ -1,7 +1,6 @@
 /* ---------- Grid do Corpo ----------  */
 
 .grid-container {
-    height: 71.6vh;
     margin: 0;
 }
 
@@ -16,7 +15,6 @@
 .menu-vertical {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
     gap: 1px 1px;
     grid-template-areas: ". . ." ". . .";
     grid-area: menu-vertical;
@@ -71,7 +69,8 @@
     /* overflow: auto; */
     background-color: #fee8c4;
     /* width: 218px; */
-    /* height: 100%; */
+    height: 100%;
+    height: 74vh;
     /* Note a medida */
     /* color: #404A51;
     margin-right: 0;
