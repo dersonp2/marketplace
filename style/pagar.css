@@ -1,0 +1,150 @@
+/* ---------- Grid do Corpo ----------  */
+
+.grid-container {
+    height: 71.6vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 16.6% 83.3%;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "menu-vertical conteudo";
+}
+
+.menu-vertical {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: ". . ." ". . .";
+    grid-area: menu-vertical;
+}
+
+.conteudo {}
+
+
+/* Botão */
+
+.btn_tab {
+    background-color: white;
+    color: #404A51;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #404A51;
+}
+
+
+/* input */
+
+#input-recomendacao {
+    width: 400px;
+    margin-top: 2px;
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Karla';
+    border-radius: 5px;
+    color: #404A51;
+}
+
+.input-cartao {
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Karla';
+    border-radius: 5px;
+    color: #404A51;
+}
+
+.input-cartao-100 {
+    width: 97%;
+}
+
+.input-cartao-90 {
+    width: 90%;
+}
+
+
+/* Atenção */
+
+.li-atencao ul {
+    margin: 0px;
+    padding: 5px;
+}
+
+
+/* Tab cartão */
+
+.tab-cartao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "cartao cartao cartao cartao cartao cartao cartao img-cartao img-cartao img-cartao img-cartao img-cartao";
+}
+
+.cartao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2px 10px;
+    grid-template-areas: "radio-cartao radio-cartao radio-cartao radio-cartao radio-cartao . . . . . ." "numero numero numero numero numero numero numero mes mes ano ano" "nome nome nome nome nome nome nome nome nome cod-seg cod-seg" "cupom cupom cupom cupom cupom cupom cupom aplicar aplicar total total";
+    grid-area: cartao;
+}
+
+.radio-cartao {
+    grid-area: radio-cartao;
+}
+
+.numero {
+    grid-area: numero;
+}
+
+.mes {
+    grid-area: mes;
+}
+
+.ano {
+    grid-area: ano;
+}
+
+.nome {
+    grid-area: nome;
+}
+
+.cod-seg {
+    grid-area: cod-seg;
+}
+
+.cupom {
+    grid-area: cupom;
+}
+
+.aplicar {
+    grid-area: aplicar;
+}
+
+.total {
+    grid-area: total;
+}
+
+.img-cartao {
+    grid-area: img-cartao;
+}
+
+
+/* Para apresentacao*/
+
+.grid-container * {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+
+/* .grid-container *:after {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+} */

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/escolher-materiais.css">
+    <title>DeCasa</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="grid-header">
+
+        <!-- Login -->
+        <div class="login orange">
+            <a id="login">
+                <div class="justify-center d-flex mt-2 mt-md-5">
+                    <img class="img-logo" src="img/user.png" alt="Imagem Perfil">
+                </div>
+                <p class="text-center mt-1">
+                    Fazer login
+                </p>
+            </a>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <!-- Icones -->
+            <div class="icones">
+                <ul class="menu">
+                    <li> <a href=""><i class="fas fa-map-marker-alt">
+                    </i></a>
+                        <li><a href=""><i class="far fa-heart"></i></li></a>
+                            <li><a href=""><i class="fa fa-shopping-cart"></i></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar light-orange">
+            <div class="nav ">
+                <ul class="font-size">
+                    <li>
+                        <a class="active"> Escolher Material 
+                  </a>
+                    </li>
+                    <li>
+                        <a href="calcular-frete.html">
+                    Calcular Frete
+                  </a>
+                    </li>
+                    <li>
+                        <a href="resumo-pedido.html">
+                    Resumo do Pedido
+                  </a>
+                    </li>
+                    <li>
+                        <a href="pagar.html"> 
+                    Pagar
+                  </a>
+                    </li>
+                    <li>
+                        <button type="button" name="" value="" class="btn-white mt-1" onclick="location.href='calcular-frete.html'">Avançar<i class="ml-2  fas fa-angle-double-right"></i></button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo -->
+    <section>
+        <div class="grid-container">
+
+            <!-- Menu Vertical -->
+            <div class="menu-vertical nav-side-menu">
+                <div class="mt-2">
+                    <div id="categoria"><b>Categorias</b></div>
+                    <br/>
+                    <ul>
+                        <li class="collapsed">
+                            <h3>
+                                </span>Informática <span class="arrow"></span></h3>
+                            <ul class="sub-menu">
+                                <li><a href="#">Manutenção</a></li>
+                                <li><a href="#">Redes</a></li>
+                            </ul>
+                        </li>
+                        <!-- we will keep this LI open by default -->
+                        <li class="collapsed">
+                            <h3>Obras e Reformas<span class="arrow"></span></h3>
+                            <ul class="sub-menu">
+                                <li><a href="#">Elétrica</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Conteudo -->
+            <div class="conteudo">
+
+                <!-- Pesquisa -->
+                <div class="pesquisa">
+                    <div class="justify-center  mt-2">
+                        <input type="text" name="tBusca" class="input-300" placeholder="O que está procurando?">
+                        <div class="lupa"></div>
+                    </div>
+
+                    <div class="justify-center mt-2">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" id="rVarejo" checked>
+                            <label for="rVarejo">Varejo</label>
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" id="rAtacado">
+                            <label for="rAtacado">Atacado</label>
+                        </label>
+                    </div>
+                </div>
+                <!-- Fim Pesquisa-->
+
+                <!-- Filtros -->
+                <div class="filtros">
+                    <div class="filtro">
+                        <div class="navFiltro">
+                            <ul>
+                                <i class="fas fa-filter fa-lg ml-2 font-gray"></i>
+                                <li><a href="" class="ml-2">Menor preço</a></li>
+                                <li><a href="" class="ml-2">Entrega pra mim</a></li>
+                                <li><a href="" class="ml-2">O mais perto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pesquisa-loja">
+
+                        <div class="fr mr-2">
+                            <input type="text" name="tBuscaLoja" class="input-300" placeholder="Alguma loja de preferência?">
+                            <div class="lupa"></div>
+                        </div>
+                    </div>
+                    <div class="ver-mapa">
+                        <button type="button" name="" value="" class="btn-white fr mr-2 mb-1 ">Ver no mapa</i>
+                        </button>
+                    </div>
+                </div>
+                <!-- Fim Filtros -->
+
+                <!-- Produtos -->
+                <div class="produtos">
+                    <table>
+                        <tr>
+                            <!-- Imagem do produto -->
+                            <td>
+                                <div class="justify-center">
+                                    <div class="img-produto">
+                                        <img src="./img/logo.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="justify-center ">
+                                    <button type="button" name="" value="" class="d-block btn-white mt-1">Adicionar<i class="ml-2 fas fa-shopping-cart"></i></button>
+                                </div>
+                            </td>
+
+                            <!-- Detalhes -->
+                            <td>
+                                <ul>
+                                    <li><b>Porcelanato resinado 60x60cm</b></li>
+                                    <li>Marca: Portobelo</li>
+                                    <br/>
+                                    <li>Tamanho: (LxCxH) cm </li>
+                                    <li>Peso: 200 kg</li>
+                                    <li>Unidade: m2</li>
+                                </ul>
+                            </td>
+
+                            <!-- Loja -->
+                            <td>
+                                <ul>
+                                    <!-- Nome: -->
+                                    <li><b>Will Home Center</b></li>
+                                    <br/>
+                                    <li>Distância: 8km</li>
+                                    <li>Entrega: CIF</li>
+                                    <li>Prazo: Imediato </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <button type="button" name="" value="" class="d-block btn-white mt-1 btn-opcoes">
+                                    Especificação Técnica
+                                </button>
+
+                                <button type="button" name="" value="" class="d-block btn-white mt-1 btn-opcoes">
+                                    Aplicação
+                                </button>
+
+                                <button type="button" name="" value="" class="d-block btn-white mt-1 btn-opcoes">
+                                    Vídeo do Fabricante
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Fim Produtos -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- prefix free to deal with vendor prefixes -->
+    <!-- <script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script> -->
+
+    <!-- jQuery -->
+    <script src="http://thecodeplayer.com/uploads/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js "></script>
+
+    <script>
+        /*jQuery time*/
+        $(document).ready(function() {
+            $(".nav-side-menu h3").click(function() {
+                //slide up all the link lists
+                $(".nav-side-menu ul ul").slideUp();
+                //slide down the link list below the h3 clicked - only if its closed
+                if (!$(this).next().is(":visible")) {
+                    $(this).next().slideDown();
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

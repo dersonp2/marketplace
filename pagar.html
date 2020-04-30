@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/pagar.css">
+    <title>DeCasa</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="grid-header">
+
+        <!-- Login -->
+        <div class="login orange">
+            <a id="login">
+                <div class="justify-center d-flex mt-2 mt-md-5">
+                    <img class="img-logo" src="img/user.png" alt="Imagem Perfil">
+                </div>
+                <p class="text-center mt-1">
+                    Fazer login
+                </p>
+            </a>
+        </div>
+
+        <!-- Header -->
+        <div class="header">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <!-- Icones -->
+            <div class="icones">
+                <ul class="menu">
+                    <li> <a href=""><i class="fas fa-map-marker-alt">
+                    </i></a>
+                        <li><a href=""><i class="far fa-heart"></i></li></a>
+                            <li><a href=""><i class="fa fa-shopping-cart"></i></li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar light-orange">
+            <div class="nav ">
+                <ul class="font-size">
+                    <li>
+                        <a href="escolher-materiais.html"> Escolher Material 
+                  </a>
+                    </li>
+                    <li>
+                        <a href="calcular-frete.html">
+                    Calcular Frete
+                  </a>
+                    </li>
+                    <li>
+                        <a href="resumo-pedido.html">
+                    Resumo do Pedido
+                  </a>
+                    </li>
+                    <li>
+                        <a class="active"> 
+                    Pagar
+                  </a>
+                    </li>
+                    <li>
+                        <button type="button" name="" value="" class="btn-white mt-1">Pagar</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Corpo -->
+    <section>
+        <div class="grid-container">
+            <!-- Menu Vertical -->
+            <div class="menu-vertical">
+            </div>
+            <!-- Conteudo -->
+            <div class="conteudo">
+
+                <div id="recomendacao" class="mt-2">
+                    <div class="text-center">
+                        <label for="input-recomendacao" class="text-center">Alguém recomendou nosso site? </label>
+                    </div>
+                    <div class="justify-center">
+                        <input type="text" name="" id="input-recomendacao" value="@">
+                    </div>
+                </div>
+
+
+                <div id="atencao">
+
+                    <div class="ml-2 mt-2 li-atencao">
+                        ATENÇÃO:
+                        <ul>
+                            <li> 1. O nosso sistema é criptografado, logo os pagamentos são realizados com total segurança</li>
+                            <li>2. Somos uma plataforma de intermediação de negócios, o pagamento realizado agora somente será transferido para o Prestador de Serviços após você Autorizar o Pagamento, após a conclusão e avaliação do serviço.</li>
+                            <li>3. Prestadores de Serviços receberão seu pedido após esta etapa. Aqueles que responderem dizendo que tem interesse em fazer o seu serviço aparecerão na próxima tela. (OBS: Este processo pode levar até 30 minutos)</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div id="pagamento">
+                    <div class="ml-2 mt-2">
+                        <div class="d-block">
+                            <button class="btn_tab">Cartão</button>
+                            <button class="btn_tab">Boleto</button>
+                            <button class="btn_tab">Conta Empresa</button>
+                        </div>
+                        <!-- Cartão -->
+                        <div class="mt-2 tab-cartao">
+
+                            <div class="cartao">
+
+                                <div class="radio-cartao">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" class="mr-2" checked>Débito
+                                      </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" class="mr-2">Crédito
+                                      </label>
+                                </div>
+
+                                <div class="numero">
+                                    <label for="idNumero">Número: </label>
+                                    <input type="text" name="" id="idNumero" class="d-block input-cartao input-cartao-100 ">
+                                </div>
+
+                                <div class="mes">
+                                    <label for="idMes">Mês: </label>
+                                    <input type="number" name="" id="idMes" class="d-block input-cartao input-cartao-90 ">
+                                </div>
+
+                                <div class="ano">
+                                    <label for="idAno">Ano: </label>
+                                    <input type="number" name="" id="idAno" class="d-block input-cartao input-cartao-90">
+                                </div>
+
+                                <div class="nome">
+                                    <label for="idNome">Nome: </label>
+                                    <input type="text" name="" id="idNome" class="d-block input-cartao input-cartao-100">
+                                </div>
+
+                                <div class="cod-seg">
+                                    <label for="idCod">Cod. Seg.: </label>
+                                    <input type="number" name="" id="idCod" class="d-block input-cartao input-cartao-90">
+                                </div>
+
+                                <div class="cupom">
+                                    <label for="idCupom">Cupom: </label>
+                                    <input type="text" name="" id="idCupom" class="d-block input-cartao input-cartao-100">
+                                </div>
+
+                                <div class="aplicar">
+                                    <button type="button" name="" value="" class="btn-white mt-1 w-100">Aplicar</button>
+                                </div>
+
+                                <div class="total">
+                                    <label for="idTotal">Total: </label>
+                                    <input type="number" disabled name="" id="idTotal" class="d-block input-cartao input-cartao-90">
+                                </div>
+
+                            </div>
+                            <div class="img-cartao">
+                                <div class="justify-center">
+                                    <img src="img/cartaoPagamento.jpg" width="80%" alt="Cartão" class="vertical-align">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fim conteudo-->
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js "></script>
+
+
+</body>
+
+</html>
