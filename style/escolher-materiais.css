@@ -167,7 +167,7 @@
 
 /* ------- input------ */
 
-#inputQtde {
+.inputQtde {
     font-size: 16px;
     width: 40px;
     padding: 5px;
@@ -187,17 +187,6 @@
     border-radius: 5px;
     border: 1px solid#404A51;
     color: #404A51;
-}
-
-
-/* --- Alinhamento --- */
-
-.align-bottom {
-    vertical-align: bottom;
-}
-
-.align-top {
-    vertical-align: top;
 }
 
 
@@ -248,8 +237,8 @@ table {
 }
 
 td {
+    height: 100%;
     width: 25%;
-    vertical-align: top;
 }
 
 .produtos ul {
@@ -262,14 +251,6 @@ td {
     margin: auto;
     margin-top: 10px;
     font-family: 'Karla' !important;
-}
-
-
-/* --- Preço ---- */
-
-.preco {
-    text-align: justify;
-    padding: 5px;
 }
 
 

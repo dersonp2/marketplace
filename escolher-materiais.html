@@ -157,41 +157,29 @@
 
                 <!-- Produtos -->
                 <div class="produtos">
-                    <table>
+
+                    <table class="tg">
                         <tr>
-                            <!-- Imagem do produto -->
-                            <td>
+                            <td class="align-top">
                                 <div class="justify-center">
                                     <div class="img-produto">
                                         <img src="./img/logo.png" alt="">
                                     </div>
                                 </div>
-
-                                <div class="justify-center ">
-                                    <button type="button" name="" value="" class="d-block btn-white mt-1">Adicionar<i class="ml-2 fas fa-shopping-cart"></i></button>
-                                </div>
                             </td>
 
-                            <!-- Detalhes -->
-                            <td>
-                                <div class="align-top">
-                                    <ul>
-                                        <li><b>Porcelanato resinado 60x60cm</b></li>
-                                        <li>Marca: Portobelo</li>
-                                        <br/>
-                                        <li>Tamanho: (LxCxH) cm </li>
-                                        <li>Peso: 200 kg</li>
-                                        <li>Unidade: m2</li>
-                                    </ul>
-                                </div>
-                                <div class="preco">
-                                    Pr Unit: <b> R$ 50,00</b> <span class="ml-2 mr-2">x</span>
-                                    <input type="number" title="Quantidade" min="0" value="0" name="" id="inputQtde">
-                                </div>
+                            <td class="align-top">
+                                <ul>
+                                    <li><b>Porcelanato resinado 60x60cm</b></li>
+                                    <li>Marca: Portobelo</li>
+                                    <br/>
+                                    <li>Tamanho: (LxCxH) cm </li>
+                                    <li>Peso: 200 kg</li>
+                                    <li>Unidade: m2</li>
+                                </ul>
                             </td>
 
-                            <!-- Loja -->
-                            <td>
+                            <td class="align-top">
                                 <ul>
                                     <!-- Nome: -->
                                     <li><b>Will Home Center</b></li>
@@ -199,16 +187,10 @@
                                     <li>Distância: 8km</li>
                                     <li>Entrega: CIF</li>
                                     <li>Prazo: Imediato </li>
-                                    <br/>
                                 </ul>
-
-                                <div>
-                                    <div class="total">
-                                        Total: R$ 0,00
-                                    </div>
-                                </div>
                             </td>
-                            <td>
+
+                            <td class="align-top" rowspan="2">
                                 <button type="button" name="" value="" class="d-block btn-white mt-1 btn-opcoes">
                                     Especificação Técnica
                                 </button>
@@ -222,7 +204,30 @@
                                 </button>
                             </td>
                         </tr>
+                        <tr>
+
+                            <td class="align-bottom">
+                                <div class="justify-center ">
+                                    <button type="button" name="" value="" class="d-block btn-white mt-1">Adicionar<i class="ml-2 fas fa-shopping-cart"></i></button>
+                                </div>
+                            </td>
+
+                            <td class="align-bottom">
+                                <div class="ml-2">
+                                    Pr Unit: <b> R$ 50,00</b> <span class="ml-2 mr-2">x</span>
+                                    <input type="number" title="Quantidade" min="0" value="0" name="" class="inputQtde">
+                                </div>
+                            </td>
+
+                            <td class="align-bottom">
+                                <div class="total ml-2">
+                                    Total: R$ 0,00
+                                </div>
+                            </td>
+
+                        </tr>
                     </table>
+
                 </div>
                 <!-- Fim Produtos -->
             </div>
