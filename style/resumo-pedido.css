@@ -30,6 +30,7 @@
 
 .pedidos {
     clear: both;
+    margin-top: 65px;
 }
 
 
@@ -37,6 +38,8 @@
 
 .pedidos table {
     width: 100%;
+    border-top: 1px solid #404A51;
+    border-bottom: 1px solid #404A51;
 }
 
 .pedidos td {
@@ -50,10 +53,7 @@
     padding: 5px;
 }
 
-table {
-    border-top: 1px solid #404A51;
-    border-bottom: 1px solid #404A51;
-}
+table {}
 
 .total {
     font-weight: bold;
@@ -90,5 +90,5 @@ a {
 
 .grid-container * {
     /* border: 1px solid red; */
-    position: relative;
+    /* position: relative; */
 }

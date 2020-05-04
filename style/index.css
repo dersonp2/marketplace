@@ -3,3 +3,8 @@
     text-decoration: none;
     color: #404A51;
 }
+
+.menu {
+    float: right;
+    margin-right: 30px;
+}
