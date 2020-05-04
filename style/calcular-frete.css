@@ -180,7 +180,7 @@ input[type="radio"] {
 
 .transporte td {
     vertical-align: top;
-    text-align: center;
+    text-align: justify;
 }
 
 .transporte ul {

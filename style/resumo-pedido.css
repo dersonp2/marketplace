@@ -45,7 +45,7 @@
 .pedidos td {
     width: 25%;
     vertical-align: top;
-    text-align: center;
+    text-align: justify;
 }
 
 .pedidos ul {
