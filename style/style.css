@@ -191,6 +191,10 @@ button {
     text-align: center;
 }
 
+.text-align-right {
+    text-align: right;
+}
+
 
 /* ----------  Configurações de Margin e Paddin ----------  */
 
